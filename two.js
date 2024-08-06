@@ -11,7 +11,7 @@ const registerIt = async (userData) => {
 
     const logs = {}
 
-    const browser = await puppeteer.launch({ headless: false })
+    const browser = await puppeteer.launch({ headless: true })
     const page = await browser.newPage()
     const resp = await page.goto('https://pieraksts.mfa.gov.lv/en/cd/index')
     // const resp = await page.goto('https://pieraksts.mfa.gov.lv/en/uited-arab-emirates')
